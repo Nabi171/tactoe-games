@@ -136,10 +136,20 @@ border-radius: 50%;
     justify-content: center;
     align-items: center;
     color: white;
-    font-size: 5 rem;
+    font-size: 5rem;
 
 }
 
 .winning-message button{
-    font-size: 3rem
+    font-size: 3rem;
+    background-color: white;
+    border: 1 px solid black;
+    padding: .25rem .5rem;
+    cursor: pointer;
+}
+
+.winning-message button::hover{
+    background-color: black;
+    color: white;
+    border-color: white;
 }
