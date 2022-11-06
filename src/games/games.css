@@ -126,18 +126,18 @@ border-radius: 50%;
 }
 
 .winning-message{
+    display: none;
     position: fixed;
     top:0;
     left: 0;
     right: 0;
     bottom: 0;
     background-color:rgba(0,0, 0, 0.9);
-    display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     font-size: 5rem;
-flex-direction: column;
+    flex-direction: column;
 }
 
 .winning-message button{
@@ -152,4 +152,8 @@ flex-direction: column;
     background-color: black;
     color: white;
     border-color: white;
+}
+
+.winning-message.show{
+    display: flex;
 }
