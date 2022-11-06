@@ -28,7 +28,13 @@ const Games = () => {
     }
 
     function setBoardHoverClass() {
-
+        board.classList.remove(X_CLASS)
+        board.classList.remove(CIRCLE_CLASS)
+        if (circleTurn) {
+            board.classList.add(CIRCLE_CLASS)
+        } else {
+            board.classList.add(X_CLASS)
+        }
     }
     return (
         <div>
